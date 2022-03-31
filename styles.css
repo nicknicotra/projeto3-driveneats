@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100% ;
+    background: #E5E5E5;
+    position: relative;
+}
+
+ 
+.barratopo {
+    width: 100%;
+    height: 92px;
+    padding: 0 21px;
+    background-color: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    /* Fixa a barra de topo em relação ao Container */
+    display: block;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.barrafundo {
+    width: 100% ;
+    height: 92px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alerta{
+    width: 88%;
+    height: 61px;
+    left: 25px;
+    bottom: 16px;
+    background: #CBCBCB;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+}
+
+.conteudo {
+    margin: 92px 0;
+    padding: 31px 19px;
+}
+
+.conteudo > h1 {
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+}
+
+.opções{
+    display:flex ;
+    margin-top: 17px;
+    margin-bottom: 27px;
+    overflow-x: scroll;
+}
+
+.opção{
+    width: 172px;
+    height: 202px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    padding: 18px 14px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.opção img {
+    width: 144px ;
+    height: 87px;
+}
+
+.opção h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    }
+
+h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    }
+
+    h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+}
