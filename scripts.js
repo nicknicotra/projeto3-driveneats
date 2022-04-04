@@ -4,6 +4,7 @@ let pratos;
 let bebidas;
 let sobremesas;
 
+// Função que adiciona layout de selecionado a um dos pratos
 function selecionarPrato(elemento) {
   const marcado = document.querySelector(".pratos").querySelector(".deugreen");
   if (marcado !== null) {
@@ -18,6 +19,7 @@ function selecionarPrato(elemento) {
   elemento.querySelector(".selecionado").classList.add("deugreen");
   elemento.querySelector(".escondido").classList.add("icone");
 
+  // Condição para botão de Finalizar o Pedido ficar verde quando o prato é escolhido por último
   pratos = true;
   if (pratos && bebidas && sobremesas) {
     document.querySelector(".alerta").classList.add("finalizarPedido");
@@ -26,6 +28,7 @@ function selecionarPrato(elemento) {
   }
 }
 
+// Função que adiciona layout de selecionado a uma daos bebidas
 function selecionarBebida(elemento) {
   const marcado = document.querySelector(".bebidas").querySelector(".deugreen");
   if (marcado !== null) {
@@ -39,6 +42,8 @@ function selecionarBebida(elemento) {
   elemento.classList.add("escolhido");
   elemento.querySelector(".selecionado").classList.toggle("deugreen");
   elemento.querySelector(".escondido").classList.add("icone");
+
+  // Condição para botão de Finalizar o Pedido ficar verde quando a bebida é escolhida por último
   bebidas = true;
   if (pratos && bebidas && sobremesas) {
     document.querySelector(".alerta").classList.add("finalizarPedido");
@@ -47,6 +52,7 @@ function selecionarBebida(elemento) {
   }
 }
 
+// Função que adiciona layout de selecionado a uma das sobremesas
 function selecionarSobremesa(elemento) {
   const marcado = document
     .querySelector(".sobremesas")
@@ -62,6 +68,8 @@ function selecionarSobremesa(elemento) {
   elemento.classList.add("escolhido");
   elemento.querySelector(".selecionado").classList.toggle("deugreen");
   elemento.querySelector(".escondido").classList.add("icone");
+
+  // Condição para botão de Finalizar o Pedido ficar verde quando a sobremesa é escolhida por último
   sobremesas = true;
   if (pratos && bebidas && sobremesas) {
     document.querySelector(".alerta").classList.add("finalizarPedido");
@@ -70,12 +78,14 @@ function selecionarSobremesa(elemento) {
   }
 }
 
+// Função que recebe o texto de valor de um produto e retorna o valor em número
 function pegaNumero(valor) {
   valor = valor.replace("R$ ", "");
   valor = Number(valor.replace(",", "."));
   return valor;
 }
 
+// Função que coleta os nomes e preços dos produtos selecionados e envia menssagem pro whatsapp
 function menssagem() {
   prato = document
     .querySelector(".pratos")

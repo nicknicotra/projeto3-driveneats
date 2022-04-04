@@ -68,6 +68,18 @@
     align-items: center;
   }
   
+   p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #ffffff;
+  }
+
+   /* Modificação do Botão depois de 3 selecionados*/
   .finalizarPedido {
     background-color: #32b72f;
     font-family: "Roboto";
@@ -81,18 +93,7 @@
     letter-spacing: 0.018em;
     color: #ffffff;
   }
-  
-  p {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.018em;
-    color: #ffffff;
-  }
-  
+
   .conteudo {
     margin: 92px 0;
     padding: 31px 19px;
@@ -177,11 +178,13 @@
     top: 0;
   }
   
+  /* Adiciona o Layout de selecionado */
   .deugreen {
     border: 5px solid #32b72f;
     border-radius: 10px;
   }
   
+  /* Esconde o Icone até a opção ser selecionada */
   .escondido {
     visibility: hidden;
   }
