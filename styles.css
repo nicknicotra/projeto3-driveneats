@@ -1,106 +1,135 @@
 * {
     box-sizing: border-box;
-}
-
-.container {
-    width: 100% ;
-    background: #E5E5E5;
+  }
+  
+  .container {
+    width: 100%;
+    background: #e5e5e5;
     position: relative;
-}
-
- 
-.barratopo {
+  }
+  
+  .barratopo {
     width: 100%;
     height: 92px;
     padding: 0 21px;
-    background-color: #CF2B2B;
+    background-color: #cf2b2b;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: fixed; 
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     /* Fixa a barra de topo em relação ao Container */
     display: block;
     align-items: center;
-}
-
-h1 {
-    font-family: 'Righteous';
+  }
+  
+  h1 {
+    font-family: "Righteous";
     font-style: normal;
     font-weight: 400;
     font-size: 44px;
     line-height: 55px;
     letter-spacing: -0.012em;
-    color: #FFFFFF;
-}
-
-h2 {
-    font-family: 'Roboto';
+    color: #ffffff;
+  }
+  
+  h2 {
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #FFFFFF;
-}
-
-.barrafundo {
-    width: 100% ;
+    color: #ffffff;
+  }
+  
+  .barrafundo {
+    width: 100%;
     height: 92px;
     position: fixed;
+    z-index: 1;
     left: 0px;
     bottom: 0px;
-    background: #FFFFFF;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.alerta{
+  }
+  
+  .alerta {
     width: 88%;
     height: 61px;
     left: 25px;
     bottom: 16px;
-    background: #CBCBCB;
+    background-color: #cbcbcb;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-p {
-    font-family: 'Roboto';
+  }
+  
+  .finalizarPedido {
+    background-color: #32b72f;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #ffffff;
+  }
+  
+  p {
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.018em;
-    color: #FFFFFF;
-}
-
-.conteudo {
+    color: #ffffff;
+  }
+  
+  .conteudo {
     margin: 92px 0;
     padding: 31px 19px;
-}
-
-.conteudo > h1 {
+  }
+  
+  .conteudo > h1 {
     font-size: 26px;
     line-height: 32px;
     letter-spacing: 0.018em;
     color: #333333;
-}
-
-.opções{
-    display:flex ;
+  }
+  
+  .pratos {
+    display: flex;
     margin-top: 17px;
     margin-bottom: 27px;
     overflow-x: scroll;
-}
-
-.opção{
+  }
+  
+  .bebidas {
+    display: flex;
+    margin-top: 17px;
+    margin-bottom: 27px;
+    overflow-x: scroll;
+  }
+  
+  .sobremesas {
+    display: flex;
+    margin-top: 17px;
+    margin-bottom: 27px;
+    overflow-x: scroll;
+  }
+  
+  .opção {
     width: 172px;
     height: 202px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
     padding: 18px 14px;
@@ -108,34 +137,63 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-}
-
-.opção img {
-    width: 144px ;
+    position: relative;
+  }
+  
+  .opção img {
+    width: 144px;
     height: 87px;
-}
-
-.opção h2 {
+  }
+  
+  .opção h2 {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     color: #333333;
-    }
-
-h3 {
-    font-family: 'Roboto';
+  }
+  
+  h3 {
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    }
-
-    h4{
-    font-family: 'Roboto';
+  }
+  
+  h4 {
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
     line-height: 18px;
-    color: #A6A6A6;
-}
+    color: #a6a6a6;
+  }
+  
+  .selecionado {
+    width: 172px;
+    height: 202px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .deugreen {
+    border: 5px solid #32b72f;
+    border-radius: 10px;
+  }
+  
+  .escondido {
+    visibility: hidden;
+  }
+  
+  .icone {
+    visibility: visible;
+    width: 19px;
+    height: 19px;
+    color: #32b72f;
+    background: #ffffff;
+    position: absolute;
+    right: 11px;
+    bottom: 11px;
+  }
+  
